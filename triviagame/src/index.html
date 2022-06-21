@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Multiple Choice Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Multiple Choice Trivia Game</h1>
+    </header>
+
+    <div class="outer-div">
+        <img src="background.png" alt="girl" width="200" height="300" style="float: left; margin-right: 20px;">
+        <div id="quesDiv" class="inner-div">
+            <h2>Question?</h2>
+            <div id="quesDiv" class="radio-div">
+                <input type="radio" id="ans0" name="ans" value="right">
+                <label for="ans0">Answer1</label><br>
+                <input type="radio" id="ans1" name="ans" value="wrong">
+                <label for="ans1">Answer2</label><br>
+                <input type="radio" id="ans2" name="ans" value="wrong">
+                <label for="ans2">Answer3</label><br>
+                <input type="radio" id="ans3" name="ans" value="wrong">
+                <label for="ans3">Answer4</label><br><br>
+                <button id="checkBtn">Check Answer</button>
+                <button id="nextBtn">Next Question</button>
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <th>Points</th>
+                <th>Time</th>
+                <th>Restart</th>
+                <th>Quit</th>
+            </tr>
+            <tr>
+                <td><img src="badge-reward-svgrepo-com.svg" width="50" height="50"></td>
+                <td><img src="time-svgrepo-com.svg" width="50" height="50"></td>
+                <td><img src="power-button-svgrepo-com.svg" width="50" height="50"></td>
+                <td><img src="exit-svgrepo-com.svg" width="50" height="50"></td>
+            </tr>
+            <tr>
+                <td id="tdPoints">0</td>
+                <td id="tdTime">30s Left</td>
+                <td>Restart Game</td>
+                <td>Quit Game</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
