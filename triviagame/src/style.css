@@ -31,3 +31,32 @@ h3 {
     font-family: arial, sans-serif;
     text-align: left;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(254, 176, 72);
+}
+
+th:nth-child(even) {
+    background-color: rgb(243, 140, 1);
+}
+
+td {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(243, 140, 1);
+}
+
+td:nth-child(even) {
+    background-color: rgb(254, 176, 72);
+}
