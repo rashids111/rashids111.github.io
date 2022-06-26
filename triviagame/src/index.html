@@ -19,16 +19,16 @@
     <div class="outer-div">
         <img src="background.png" alt="girl" width="200" height="300" style="float: left; margin-right: 20px;">
         <div id="quesDiv" class="inner-div">
-            <h2>Question?</h2>
+            <h2>Loading. Please wait....</h2>
             <div id="quesDiv" class="radio-div">
                 <input type="radio" id="ans0" name="ans" value="right">
-                <label for="ans0">Answer1</label><br>
+                <label for="ans0"></label><br>
                 <input type="radio" id="ans1" name="ans" value="wrong">
-                <label for="ans1">Answer2</label><br>
+                <label for="ans1"></label><br>
                 <input type="radio" id="ans2" name="ans" value="wrong">
-                <label for="ans2">Answer3</label><br>
+                <label for="ans2"></label><br>
                 <input type="radio" id="ans3" name="ans" value="wrong">
-                <label for="ans3">Answer4</label><br><br>
+                <label for="ans3"></label><br><br>
                 <button id="checkBtn">Check Answer</button>
                 <button id="nextBtn">Next Question</button>
                 <h3></h3>
@@ -41,19 +41,19 @@
                 <th>Points</th>
                 <th>Time</th>
                 <th>Restart</th>
-                <th>Quit</th>
+                <th>Stop</th>
             </tr>
             <tr>
-                <td><img src="badge-reward-svgrepo-com.svg" width="50" height="50"></td>
-                <td><img src="time-svgrepo-com.svg" width="50" height="50"></td>
-                <td><img src="power-button-svgrepo-com.svg" width="50" height="50"></td>
-                <td><img src="exit-svgrepo-com.svg" width="50" height="50"></td>
+                <td><img src="giphypoints.gif" width="75" height="50"></td>
+                <td><img src="giphy.webp" width="50" height="50"></td>
+                <td><img id="restartImg" src="power-button-svgrepo-com.svg" width="50" height="50"></td>
+                <td><img id="stopImg" src="exit-svgrepo-com.svg" width="50" height="50"></td>
             </tr>
             <tr>
                 <td id="tdPoints">0</td>
                 <td id="tdTime">30s Left</td>
                 <td>Restart Game</td>
-                <td>Quit Game</td>
+                <td>Stop Game</td>
             </tr>
         </table>
     </div>
